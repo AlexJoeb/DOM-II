@@ -1,28 +1,26 @@
 // Your code goes here
 
-document.addEventListener("load", () => {
-    document
-        .querySelector("h1.logo-heading")
-        .addEventListener("mouseover", event => {
-            const { target } = event;
-            target.textContent = "Testing";
-        });
-
-    document
-        .querySelector("h1.logo-heading")
-        .addEventListener("mouseout", event => {
-            const { target } = event;
-            target.textContent = "Fun Bus";
-        });
-
-    document.addEventListener("keydown", event => {
-        document.querySelector(".intro p").textContent += event.key;
+document
+    .querySelector("h1.logo-heading")
+    .addEventListener("mouseover", event => {
+        const { target } = event;
+        target.textContent = "Testing";
     });
 
-    document.addEventListener("wheel", e => {
-        console.clear();
-        console.log(e);
+document
+    .querySelector("h1.logo-heading")
+    .addEventListener("mouseout", event => {
+        const { target } = event;
+        target.textContent = "Fun Bus";
     });
+
+document.addEventListener("keydown", event => {
+    document.querySelector(".intro p").textContent += event.key;
+});
+
+document.addEventListener("wheel", e => {
+    console.clear();
+    console.log(e);
 });
 
 document
